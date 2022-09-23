@@ -1,0 +1,61 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    .logo {
+        a {
+            .fa-solid.fa-clover {
+                color: $logo;
+                font-size: 33px;
+            }
+            &:hover {}
+            &:active {}
+            &:focus {}
+        }
+    }
+    nav {
+        .header__list {
+            display: flex;
+            width: 280px;
+            justify-content: space-between;
+        .header__item {
+        }
+        .search {
+            .fa-solid.fa-magnifying-glass {
+            }
+            
+            }
+        }
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 160px;
+        li button {
+            font-size: 20px;
+        .user {
+            .fa-solid.fa-user {
+            }
+            &:hover {}
+            &:active {}
+            &:focus {}
+        }
+        .btn-cart {
+            .fa-solid.fa-cart-shopping {
+            }
+            &:hover {}
+            &:active {}
+            &:focus {}
+        }
+        .favourite {
+            .fa-solid.fa-heart {
+            }
+            &:hover {}
+            &:active {}
+            &:focus {}
+        }
+        }
+    }
+}

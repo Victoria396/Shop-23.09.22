@@ -1,0 +1,25 @@
+@import "_reset";
+@import "_var";
+@import "_fonts";
+
+p, h1, h2, h3, li, a, button {
+    color:$text;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    &:hover {color: $textActive;}
+    &:active {color: $textActive;}
+    &:focus {color: $textActive;}
+}
+
+a {
+    &:hover {color: $textActive;}
+    &:active {color: $textActive;}
+    &:focus {color: $textActive;}
+}
+
+@import "_header";
+@import "_card";
