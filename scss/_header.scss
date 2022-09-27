@@ -19,13 +19,6 @@ header {
             display: flex;
             width: 280px;
             justify-content: space-between;
-        .header__item {
-        }
-        .search {
-            .fa-solid.fa-magnifying-glass {
-            }
-            
-            }
         }
     }
     ul {
@@ -35,13 +28,6 @@ header {
         width: 160px;
         li button {
             font-size: 20px;
-        .user {
-            .fa-solid.fa-user {
-            }
-            &:hover {}
-            &:active {}
-            &:focus {}
-        }
         .btn-cart {
             .fa-solid.fa-cart-shopping {
             }
