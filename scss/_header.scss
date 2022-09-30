@@ -9,9 +9,6 @@ header {
                 color: $logo;
                 font-size: 33px;
             }
-            &:hover {}
-            &:active {}
-            &:focus {}
         }
     }
     nav {
@@ -28,20 +25,6 @@ header {
         width: 160px;
         li button {
             font-size: 20px;
-        .btn-cart {
-            .fa-solid.fa-cart-shopping {
-            }
-            &:hover {}
-            &:active {}
-            &:focus {}
-        }
-        .favourite {
-            .fa-solid.fa-heart {
-            }
-            &:hover {}
-            &:active {}
-            &:focus {}
-        }
         }
     }
 }
