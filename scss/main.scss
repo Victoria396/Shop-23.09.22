@@ -6,7 +6,7 @@ p, h1, h2, h3, li, a, button {
     color:$text;
 }
 
-button {
+button, a, span {
     background: transparent;
     border: none;
     cursor: pointer;
@@ -15,10 +15,8 @@ button {
     &:focus {color: $textActive;}
 }
 
-a {
-    &:hover {color: $textActive;}
-    &:active {color: $textActive;}
-    &:focus {color: $textActive;}
+.hidden {
+    display: none !important;
 }
 
 @import "_header";

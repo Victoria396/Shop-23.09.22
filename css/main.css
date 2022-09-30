@@ -58,29 +58,23 @@ p, h1, h2, h3, li, a, button {
   color: rgb(28, 29, 37);
 }
 
-button {
+button, a, span {
   background: transparent;
   border: none;
   cursor: pointer;
 }
-button:hover {
+button:hover, a:hover, span:hover {
   color: rgb(23, 127, 23);
 }
-button:active {
+button:active, a:active, span:active {
   color: rgb(23, 127, 23);
 }
-button:focus {
+button:focus, a:focus, span:focus {
   color: rgb(23, 127, 23);
 }
 
-a:hover {
-  color: rgb(23, 127, 23);
-}
-a:active {
-  color: rgb(23, 127, 23);
-}
-a:focus {
-  color: rgb(23, 127, 23);
+.hidden {
+  display: none !important;
 }
 
 header {
@@ -103,10 +97,10 @@ header nav .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 280px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 410px;
 }
 header ul {
   display: -webkit-box;
@@ -123,6 +117,85 @@ header ul {
 header ul li button {
   font-size: 20px;
 }
+
+.cart-block {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 110px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  -webkit-box-shadow: 2px 1px 4px 4px rgba(34, 60, 80, 0.1);
+          box-shadow: 2px 1px 4px 4px rgba(34, 60, 80, 0.1);
+}
+
+.product-bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding: 3px;
+}
+
+.product-single-price {
+  font-size: 14px;
+}
+
+.product-title {
+  font-weight: 600;
+}
+
+.right-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.fa-trash-can, .product-quantity {
+  font-size: 15px;
+}
+
+.fa-plus, .fa-minus {
+  font-size: 12px;
+}
+
+.product-desc {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-field {
+  border: none;
+  border-bottom: 1.5px solid gray;
+}
+.search-field:focus {
+  outline: none;
+}
+
 .products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -157,6 +230,7 @@ header ul li button {
   color: rgb(234, 240, 240);
   padding: 10px 45px;
   border-radius: 3px;
+  font-size: 17px;
 }
 .products .product-item .buy-btn:hover {
   background: rgba(84, 184, 84, 0.8);
